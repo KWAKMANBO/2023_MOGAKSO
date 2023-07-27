@@ -35,18 +35,19 @@ public class Problem010_MYversion {
             if(SubArr[i] < min){
                 min = SubArr[i];
             }
-            System.out.println(min);
+            System.out.println((min));
         
         }
 
        for(int i = A  ; i < N; i++){
              int sub[] = new int[A];
-            for(int  j = i - A; j < i; j++ ){
+            for(int  j = i - A + 1; j < i; j++ ){
                
-                for(int k = 0; k< A; k++){
                 
-                if(j+k >= N)break;
-                    sub[k] = Arr[j + k ];  
+                for(int k = 0; k< A; k++){
+                 
+                sub[k] = Arr[j + k ]; 
+                if(k == N)break;    
                 }
                 Arrays.sort(sub);
                
