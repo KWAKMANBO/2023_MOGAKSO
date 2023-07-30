@@ -12,7 +12,7 @@ import java.io.OutputStreamWriter;
 
 public class Problem010_Answer {
     
-    // Node 클래스 선ㅓㄴ
+    // Node 클래스 선언
     static class Node{
         public int index;
         public int value;
