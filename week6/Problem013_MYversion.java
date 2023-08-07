@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+// Queue, LinkedList, 사용
 
 public class Problem013_MYversion {
     public static void main(String[] args) {
@@ -13,14 +14,12 @@ public class Problem013_MYversion {
             q.offer(i);
         }
 
-        while (!q.isEmpty()) {
+        while (q.size() != 1) {
             q.poll();
             q.offer(q.poll());
-
-            if (q.size() == 1) {
-                System.out.println(q.poll());
-                break;
-            }
         }
+
+        System.out.println(q.poll());
+
     }
 }
