@@ -2,14 +2,15 @@ import java.util.*;
 
 public class Fibonacci_TopDown {
     static int D[];
-    public static void main(String args[]){
-       Scanner sc = new Scanner(System.in);
-       
-       int n = sc.nextInt();
 
-        D = new int[n+1];
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
 
-        for(int i = 0; i <= n; i++){
+        int n = sc.nextInt();
+
+        D = new int[n + 1];
+
+        for (int i = 0; i <= n; i++) {
             D[i] = -1;
         }
 
@@ -19,9 +20,9 @@ public class Fibonacci_TopDown {
         System.out.println(D[n]);
     }
 
-    static int fibonacci(int n){
-        if(D[n] !=1)
+    static int fibonacci(int n) {
+        if (D[n] != -1)
             return D[n];
-        return D[n] = fibonacci(n-2) + fibonacci(n-1); 
+        return D[n] = fibonacci(n - 2) + fibonacci(n - 1);
     }
 }
