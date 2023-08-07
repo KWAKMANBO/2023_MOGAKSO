@@ -6,6 +6,7 @@ public class Problem061_MYversion {
 
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         int n = Integer.parseInt(st.nextToken()); // 도시 개수
@@ -46,10 +47,17 @@ public class Problem061_MYversion {
 
         for (int i = 1; i < n + 1; i++) {
             for (int j = 1; j < n + 1; j++) {
-                System.out.print(dist[i][j] + " ");
+                if(dist[i][j] == INF){
+                    //System.out.println("0");
+                    bw.write("0 ");
+                }else{
+                //System.out.print(dist[i][j] + " ");
+                bw.write(dist[i][j] + " ");
+                }
             }
+            bw.flush();
             System.out.println();
         }
-
+        bw.close();
     }
 }
