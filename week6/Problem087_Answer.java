@@ -2,7 +2,7 @@ package week6;
 import java.io.*;
 import java.util.*;
 
-public class Problem081_Answer {
+public class Problem087_Answer {
     static long mod = 10007;
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
