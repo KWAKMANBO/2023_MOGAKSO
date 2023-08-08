@@ -1,3 +1,4 @@
+package week6;
 import java.io.*;
 import java.util.*;
 // Queue, LinkedList, 사용
