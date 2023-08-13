@@ -15,6 +15,8 @@ public class week7_test {
             this.index = index;
         }
 
+
+        // ComparreTo test
         @Override
         public int compareTo(mData o){
             return o.value - this.value;
@@ -23,6 +25,7 @@ public class week7_test {
         }
     }
     public static void main(String[] args)throws IOException{
+        /* 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int N = Integer.parseInt(br.readLine());
@@ -40,6 +43,12 @@ public class week7_test {
         for(int i =0; i < N; i++){
           System.out.print(A[i].value + " ");
         }
+        */
+
+        //substring test
+        String str = "0123456789";
+
+        System.out.println(str.substring(2,));
 
     }
 }
