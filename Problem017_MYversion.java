@@ -26,7 +26,7 @@ public class Problem017_MYversion {
                 }
             }
 
-            System.out.println("a[max] : " + a[max] + " , a[i] : " + a[i]);
+            
             int tmp = a[max];
             a[max] = a[i];
             a[i] = tmp;
