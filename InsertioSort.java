@@ -1,6 +1,6 @@
 //Insertion Sort 예제
 
-public class InsertioSrot {
+public class InsertioSort {
     
     static void insertionSort(int[] arr){
         int n =  arr.length;
